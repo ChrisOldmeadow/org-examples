@@ -1,0 +1,7 @@
+#+TITLE: Readme
+
+* About
+
+A collection of scripts to showcase using emacs org-mode, for reproducible research.
+
+- An example using R code, ess, and org-mode
