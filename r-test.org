@@ -1,9 +1,20 @@
-#+TITLE: R Test
+#+TITLE: An example report using org-mode and R-code
+#+AUTHOR: Chris Oldmeadow
+#+DATE: Tue Apr 20 19:47:11 2021
+#+EXCLUDE_TAGS: noexport
+
+
+* Checklist [3/5] :noexport:
+- [X]  Libraries
+- [X]  Data
+- [ ]  Plots
+- [X]  interactivity
+- [-]  hiding todo checklists
 
 
 * Section
 
-Trying an example of a reproducable report in org-more
+Trying an example of a reproducible report in org-more
 
 
 Note that it is not possible to use nice keybindings to send code chunks to an R session (or at least I havent worked it out)
@@ -18,8 +29,7 @@ library(ascii)
 
 * Data
 
-An example dataset is read in to R wiht some plots and sumary statistics below
-
+We can read and example dataset  in to R and print the first 5 lines using the folloing
 
 #+begin_src R :session :exports both
 dat <- read_csv(file = "~/cars.csv")
@@ -30,3 +40,9 @@ head(dat)
 The data is read in to R, we can now summarise the data
 
 
+* Exporting Report
+
+
+To export this document to a html (or pddf file) use <SPACE-m-e-h-o>
+
+This will build a html file and open it in the default web browser
