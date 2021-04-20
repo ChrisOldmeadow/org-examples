@@ -1,0 +1,32 @@
+#+TITLE: R Test
+
+
+* Section
+
+Trying an example of a reproducable report in org-more
+
+
+Note that it is not possible to use nice keybindings to send code chunks to an R session (or at least I havent worked it out)
+The way to be interactive in an org document is to <C-c-'> an <C-RET> to run the code chunk
+
+* Libraries for R
+
+#+begin_src R :session
+library(tidyverse)
+library(ascii)
+#+end_src
+
+* Data
+
+An example dataset is read in to R wiht some plots and sumary statistics below
+
+
+#+begin_src R :session :exports both
+dat <- read_csv(file = "~/cars.csv")
+head(dat)
+#+end_src
+
+
+The data is read in to R, we can now summarise the data
+
+
